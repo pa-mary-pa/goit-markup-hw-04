@@ -392,8 +392,8 @@ h6 {
   margin-bottom: 16px;
 }
 
-.soc-links:hover,
-.soc-links:focus {
+.soc-links-footer:hover,
+.soc-links-footer:focus {
   background-color: #31d0aa;
 }
 
