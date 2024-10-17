@@ -139,12 +139,13 @@ h6 {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\ 1-min.jpg);
+    url(../images/people-office1-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
   margin: 0 auto;
   max-width: 1440px;
   block-size: cover;
+  background-size: cover;
 }
 .title-main {
   font-weight: 700;
@@ -177,6 +178,7 @@ h6 {
   padding: 16px 32px;
   height: 56px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-main:hover,
 .button-main:focus {
@@ -231,6 +233,7 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 8px;
 }
 
 /* --------------------TEAM-PAGE---------------------*/
@@ -272,6 +275,7 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
   color: #434455;
+  padding-bottom: 8px;
 }
 .list-team {
   background: #fff;
@@ -286,7 +290,6 @@ h6 {
   gap: 24px;
   align-items: center;
   justify-content: center;
-  padding-top: 8px;
 }
 
 .soc-links {
@@ -297,6 +300,7 @@ h6 {
   height: 100%;
   border-radius: 50%;
   background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .soc-item {
@@ -304,7 +308,8 @@ h6 {
   height: 40px;
 }
 
-.soc-links:hover {
+.soc-links:hover,
+.soc-links:focus {
   background-color: #404bbf;
 }
 
@@ -359,6 +364,8 @@ h6 {
   background-color: #2e2f42;
   padding-top: 100px;
   padding-bottom: 100px;
+  display: flex;
+  align-items: baseline;
 }
 
 .logo-footer .logo-part {
@@ -385,6 +392,38 @@ h6 {
   margin-bottom: 16px;
 }
 
-.soc-links-footer:hover {
+.soc-links:hover,
+.soc-links:focus {
   background-color: #31d0aa;
+}
+
+.soc-links-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.logo-container {
+  margin-right: 120px;
+}
+.text-footer-soc {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.soc-list-footer {
+  display: flex;
+  gap: 16px;
 }
